@@ -1,0 +1,7 @@
+[1001/224509.359:ERROR:crashpad.cc(149)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[1002/013410.997:ERROR:crashpad.cc(149)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[1027/204441.552:ERROR:crashpad.cc(149)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[1027/225344.593:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1028/102554.375:ERROR:crashpad.cc(149)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
+[1028/103554.268:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1028/114342.394:ERROR:crashpad.cc(149)] Failed to get activation factory for IPlatformDiagnosticsAndUsageDataSettingsStatics
