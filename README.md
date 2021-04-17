@@ -1,7 +1,7 @@
-#Ehceyn book reform
+# Readme.md
 it is an ehceyn note upgrade with more features and darkmode
 
-###Status 
+### Status 
 stil in development
 
 
