@@ -1,4 +1,4 @@
-import { createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   body {
  
@@ -13,8 +13,10 @@ html {
 }
 body {
   padding-left: 0 ;
-  background: radial-gradient(630px circle at 540px 0px, ${({ theme }) => theme.radialGradient1} 50%, transparent 50.2%),
-     radial-gradient(630px circle at 980px 0px, ${({ theme }) => theme.radialGradient2} 50%, transparent 50.2%),
+  background: radial-gradient(630px circle at 540px 0px, ${({ theme }) =>
+    theme.radialGradient1} 50%, transparent 50.2%),
+     radial-gradient(630px circle at 980px 0px, ${({ theme }) =>
+       theme.radialGradient2} 50%, transparent 50.2%),
      radial-gradient(150px circle at 800px 500px, rgba(204, 204, 204, 0.20) 50%, transparent 50.6%) ,
      radial-gradient(200px circle at 300px 500px, rgba(204, 204, 204, 0.20) 50%, transparent 50.5%) ,
      radial-gradient(150px circle at 1100px 800px, rgba(204, 204, 204, 0.25) 50%, transparent 50.6%) ,
@@ -41,8 +43,8 @@ header {
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+  font-family: "lato", Segoe UI, sans-serif;
+  font-weight: 500;
 }
 
 #burger-icon{
@@ -167,7 +169,7 @@ header h1 {
   width: 100%;
   height: 100vh;
   color: #ce0e6e;
-  z-index: 1;
+  z-index: 1000;
   transition: 3000ms all ease-in-out;
 }
 #confirm-box>div {
@@ -192,13 +194,16 @@ header h1 {
 #confirm-box>div>div+div button {
   margin: 5px;
 }
+
+.footer-section{
+  clear:both;
+
+}
 footer,#clear-all-btn {
-  position: absolute;
-  clear: both;
   text-align: center;
-  bottom: 0;
   width: 100%;
   height: 2.5rem;
+  margin-bottom:20px;
 }
 
 footer p {
@@ -213,14 +218,29 @@ footer p {
    radial-gradient(150px circle at 1100px 700px, rgba(204, 204, 204, 0.25) 50%, transparent 50.6%),
    radial-gradient(200px circle at 600px 700px, rgba(204, 204, 204, 0.25) 50%, transparent 50.5%);
    background-repeat: no-repeat;
-   background: white;
+   background: transparent;
    width: 100%;
-   
+   min-height:45vh;
+}
+.no-note-msg{
+  text-align:center;
+  line-height:30px;
+  word-spacing:4px;
+  margin:100px 20%;
+  color: ${({ theme }) => theme.text};
+max-width:500px;
+height:200px;
+padding:70px 30px;
+background-color:${({ theme }) => theme.noNoteColor};
+border-radius:5px;
+  transition:0.5s all linear;
+
+
 }
 .note {
   background-color: ${({ theme }) => theme.body};
   border-radius: 7px;
-  /* box-shadow: 0 2px 5px #ccc; */
+  //  box-shadow: 0 2px 5px #ccc;
   border: 1px solid #ccc;
   padding: 10px;
   width: 240px;
@@ -361,7 +381,7 @@ form textarea {
   resize: none;
   background: ${({ theme }) => theme.body};
   transition: all 0.50s linear;
-
+  scrollbar-width: 200px;
 }
 form textarea {
   padding-bottom: 0;
@@ -411,4 +431,4 @@ form button:disabled {
 .white{
   background: white;
 }
-  `
+  `;
